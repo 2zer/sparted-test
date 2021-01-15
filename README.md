@@ -1,5 +1,10 @@
 # Hello la team SPARTED !
 
+## run
+
+    - `cd sparted && npm install`
+    - `npm run dev`
+
 N'ayant jamais utilisé mithril auparavant, j'ai commencé par me rendre sur la doc de Mithril afin d'en apprendre un peu plus sur la techno (très intéressante !).
 
 Pour ne pas perdre de temps avec les configurations de Mithril, Webpack et babel, j'ai pris la décision d'utiliser create-mithril-app (inspiré par create-react-app) : https://www.npmjs.com/package/create-mithril-app.
@@ -26,3 +31,4 @@ Pour les chargements, j'ai commencé par mettre en place le lazyload pour les pe
 
 J'aurai aimé prendre plus de temps pour vous livrer un code supérieur, et plus en adéquation avec les best practices de la techno.
 Je serai très heureux de pouvoir échanger avec vous sur ce sujet.
+
