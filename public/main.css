@@ -1,0 +1,90 @@
+/*minimalist css reset*/
+html, body {
+    margin: 0;
+    box-sizing: border-box
+}
+
+header {
+    background-color: #173150;
+    height: 120px;
+    padding-top: 20px;
+}
+
+header h3 {
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 30px 20px;
+}
+
+div.container {
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+}
+
+div.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 999px;
+    background-image: url('https://media-exp1.licdn.com/dms/image/C4D35AQGN3hdRoMzwDg/profile-framedphoto-shrink_400_400/0/1610452031230?e=1610661600&v=beta&t=wl61Kds5cHBab0gaWcSEXuuNzEA9tYkMw0J5iNlk8yA');
+    background-size: cover;
+    border: 2px solid #d23635
+}
+
+div.picture-list {
+    margin-top: 100px;
+    width: 100%
+}
+
+/*display*/
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.col{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.col img {
+    width: 100%;
+    z-index: 1;
+    /*background-color: lightgray;*/
+    background: transparent url('https://cdn.dahaboo.com/upload/i/2018-04/galloper-2-64673.png?v=1522679412') center no-repeat;
+}
+
+p.legende {
+    text-align: right;
+    z-index: 100;
+    color: rgba(0,0,0,.0);
+    margin-top: -40px;
+    margin-right: 10px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*behavior*/
+.col img:hover{
+    cursor:pointer;
+    /*filter: grayscale(100%)*/
+}
+
+.col img:hover ~ .legende {
+    color: white;
+    text-shadow: #000 1px 0 10px;
+}
+
+p.legende:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+    animation-play-state: paused !important;
+}
