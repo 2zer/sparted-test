@@ -24,7 +24,8 @@ Pour les chargements, j'ai commencé par mettre en place le lazyload pour les pe
 
 ## La road map se présente comme suit :
 
-    - Fixer la méthode de lancement de la requête (hack nécessaire pour éviter l'envoie de plusieurs requêtes en simultané)
+    - Fixer la méthode de lancement de la requête (hack nécessaire pour éviter l'envoie de plusieurs requêtes en simultané) :
+        -> utiliser l'api intersectionObserver pour gérer le scroll infini 
     - Fixer le chargement progressif des images dans le DOM virtuel (via asynch loading)
     - Revoir le lifecycle du composant et la gestion du store
     - Compléter la fonction pour les connexions lentes
